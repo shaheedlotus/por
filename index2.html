@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-section</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+
+
+    <style>
+
+
+ /*##### Default CSS ####*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  position: relative;
+}
+.row{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.row::after {
+  display:table;
+  clear:both;
+  content:" ";
+}
+.col-1{width:8.33%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
+*{
+  box-sizing: border-box;
+}
+/*##Default css end ##*/
+
+
+        /* nav section start */
+
+        nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+nav ul li a:hover{
+   
+    color:orange;
+    transition: 0.6s;
+   
+}
+
+
+
+   /* nav section end */
+
+  /*## about-section 1-start ##*/
+
+#about-section {
+  background-image: url(Images/A5.png);
+  width: 100vw;
+  height: calc(100vh);
+  transition: 0.9s;
+}
+
+
+
+.left{
+  position: relative;
+}
+.left-content{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  color:  #212121;
+  transition: 0.9s;
+}
+
+.left-content:hover{
+  position: absolute;
+  top: 150px;
+  left: 45px;
+  color: orange;
+  transition: 0.9s;
+}
+.left-content h1{
+  font-size: 100px;
+  transition: 0.9s;
+}
+.left-content h3{
+  font-size: 40px;
+  transition: 0.9s;
+}
+
+.left-content h5{
+  font-size: 18px;
+  transition: 0.9s;
+}
+.left-content h1:hover{
+  font-size: 110px;
+}
+.left-content h3:hover{
+  font-size: 45px;
+  transition: 0.9s;
+}
+
+.left-content h5:hover{
+  font-size: 22px;
+  transition: 0.9s;
+}
+
+
+/*## about section 1-end ##*/
+
+
+
+/*## About-section 2-start  ##*/
+
+.section-titel{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-left{
+  height: 500px;
+  width: 350px;
+  padding: 20px;
+}
+.about-left img{
+  height: 100%;
+  width: 100%;
+}
+
+.section-titel h2{
+  font-size: 60px;
+  color:  #212121;
+  transition: 0.9s;
+}
+.section-titel h2:hover{
+  font-size: 65px;
+  color: orange;
+  transition: 0.9s;
+}
+.about-titel h3{
+  margin-top: -50px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 40px;
+  color:  #212121;
+  transition: 0.9s;
+}
+
+.about-titel h4{
+  font-size: 18px;
+  color:  #212121;
+  transition: 0.9s;
+}
+
+.about-titel h3:hover{
+  font-size: 45px;
+  transition: 0.9s;
+  color: orange;
+}
+
+.about-titel h4:hover{
+  font-size: 22px;
+  transition: 0.9s;
+  color: orange;
+}
+
+.about-content tr{
+  font-size: 15px;
+  color:  #212121;
+  text-align: left;
+  transition: 0.9s;
+}
+
+.about-content tr:hover{
+  font-size: 19px;
+  transition: 0.9s;
+  color: orange;
+}
+
+
+/*## About-section 2-end  ##*/
+
+
+
+
+/*Developed-by- Section staet*/
+
+.Developed-by{
+  background-color:#EFF4FD;
+  height: 150px;
+ }
+ .Developed-by-titel{
+   color: #333;
+   text-align: center;
+   font-size: 20px;
+   padding-top: 70px;
+   transition: 0.5s;
+ }
+ 
+ .Developed-by-titel:hover{
+   color: orange; 
+   transition: 0.5s;
+   
+ }
+ 
+ 
+ 
+.sm{
+  margin: 20px 0;
+  text-align:center;
+
+
+}
+
+
+.sm a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color:#2c3050;
+  font-size: 18px;
+  transition: 0.9s;
+  border-radius: 50%;
+ 
+}
+.sm a:hover{
+  background: orange;
+  color: white;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: 0.9s;
+  border-radius: 60%;
+}
+ 
+ /*Developed-by-Section end*/
+
+
+    </style>
+
+</head>
+<body>
+    
+
+    
+  <!-- nav section start -->
+  <nav>
+    <img src="Images/18.png" alt="">
+    <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Published Books</a></li>
+        <li><a href="index4.html">Gallery</a></li>
+        <li><a href="index5.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- nav section end -->
+
+    <!--about-section 1 start-->
+
+    <section id="about-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="left">
+                <div class="left-content">
+                  <h1>ABOUT</h1>
+                  <h3>SHAHEED LOTUS</h3>
+                  <h5>Shaheed Lotus is the writer of the Bengali language.
+                    Born, 30 May Monday at 8 am.
+                    
+                    He writes story poetry novels and essays.
+                    Published book was written by her,
+                    Bednar Bashi (novel), Kolki Sundari (novel), Arshi (novel), Grina (novel), Akush O Muktir Gan (poetry book), Muddaforasher Kobita (poetry book), Ekti Shok Sangdad (poetry book), 18 March 2019 (Autobiography ).Bosonter Shesh Bikal (novel)</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!--about-section 1 end-->
+
+    
+<!--About-section 2-start  -->
+<div class="about-section">
+    <div class="section-titel">
+      <h2>Details About Shaheed Lotus</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-left">
+            <img src="Images/about2.JPG" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-right">
+            <div class="about-titel">
+                <h3>Basic Info</h3>
+            </div>
+            <div class="about-content">
+  
+              <table>
+                <tr>
+                  <th colspan="4"></th>
+                </tr>
+                <tr>
+                  <th>Current City</th>
+                  <td>: Muktagacha</td>
+                  <td>Mymenshingh,</td>
+                  <td>Bangladesh</td>
+                  
+                </tr>
+                <tr>
+                  <th>Moved in 2012</th>
+                  <td>: Madhupur,</td>
+                  <td>Dhaka,</td>
+                  <td>Bangladesh</td>
+                 
+                </tr>
+                <tr>
+                  <th>Moved in 1993</th>
+                  <td>: Mohangonj,</td>
+                  <td>Dhaka,</td>
+                  <td>Bangladesh</td>
+                 
+                </tr>
+                <tr>
+                  <th>Gender</th>
+                  <td>: Male</td>
+                </tr>
+                <tr>
+                  <th>Birth date</th>
+                  <td>: May, 30, 1985</td>
+                </tr>
+                <tr>
+                  <th>Languages</th>
+                  <td>: Bangla</td>
+                </tr>
+                <tr>
+                  <th>Religious views</th>
+                  <td>: Islam</td>
+                </tr>
+                <tr>
+                  <th>Political views</th>
+                  <td>: Independence</td>
+                </tr>
+                <tr>
+                  <th>Former Name</th>
+                  <td>: Prodip sheikh</td>
+                </tr>
+                <tr>
+                  <th>Nickname</th>
+                  <td>: Lotus</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--About-section 2-end   -->
+
+  
+
+<!-- Developed-by Section start-->
+
+<div class="Developed-by">
+    <h6 class="Developed-by-titel">Shaheed Lotus.</h6>
+    <div class="sm">
+      <a href="https://www.facebook.com/home.php" target="blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Shaheedlotus" target="blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.youtube.com/channel/UCvjq-cnInTBvQ80mwaGxI3g" target="blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/writer.shaheedlotus/" target="blank"><i class="fab fa-instagram-square"></i></a>
+    </div>
+  </div>
+  
+  <!-- Developed-by Section end-->
+
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <STyle>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+        /* nav section start */
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+nav ul li a:hover{
+   
+    color:orange;
+    transition: 0.6s;
+   
+}
+
+
+
+   /* nav section end */
+
+   /* contact section start */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(Images/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: orange;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.9s;
+}
+
+.contact .content h2:hover{
+    font-size: 40px;
+    font-weight: 550;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.9s;
+}
+
+.contact .content p{
+    font-size: 18px;
+    color: #fff;
+    transition: 0.9s;
+}
+
+.contact .content p:hover{
+    font-size: 20PX;
+    color: orange;
+    transition: 0.9s;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.9s;
+}
+
+.container .contactinfo .box .icon:hover{
+    min-width: 65px;
+    height: 65px;
+    background:orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    font-size: 25px;
+    transition: 0.9s;
+}
+
+.container .contactinfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    transition: 0.9s;
+}
+
+.container .contactinfo .box .text:hover
+{
+    display: flex;
+    margin-left: 21px;
+    font-size: 17px;
+    color: orange;
+    flex-direction: column;
+    font-weight: 310;
+    transition: 0.9s;
+}
+
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: orange;
+    transition: 0.9s;
+}
+
+.container .contactinfo .box .text h3:hover{
+    font-weight: 550;
+    color: #fff;
+    transition: 0.9s;
+}
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactform h2{
+    font-size: 28px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.contactform h2:hover{
+    font-size: 30px;
+    color: orange;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]
+{
+  width: 100px; 
+  background: #fff; 
+  color: orange;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.contactform .inputbox input[type="submit"]:hover
+{
+  width: 100px; 
+  background: orange; 
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+@media(max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform{
+        width: 100%;
+    }
+}
+
+ /* contact section start */
+
+
+ 
+
+/*Developed-by- Section staet*/
+
+.Developed-by{
+  background-color:#EFF4FD;
+  height: 150px;
+ }
+ .Developed-by-titel{
+   color: #333;
+   text-align: center;
+   font-size: 20px;
+   padding-top: 70px;
+   transition: 0.5s;
+ }
+ 
+ .Developed-by-titel:hover{
+   color: orange; 
+   transition: 0.5s;
+   
+ }
+ 
+
+ 
+.sm{
+  margin: 20px 0;
+  text-align:center;
+
+
+}
+
+
+.sm a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color:#2c3050;
+  font-size: 18px;
+  transition: 0.9s;
+  border-radius: 50%;
+ 
+}
+.sm a:hover{
+  background: orange;
+  color: white;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  transition: 0.9s;
+  border-radius: 60%;
+}
+ 
+ /*Developed-by-Section end*/
+
+
+
+
+
+
+    </STyle>
+
+</head>
+<body>
+
+
+    
+  <!-- nav section start -->
+    <nav>
+        <img src="Images/18.png" alt="">
+        <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="index2.html">About</a></li>
+            <li><a href="index3.html">Published Books</a></li>
+            <li><a href="index4.html">Gallery</a></li>
+            <li><a href="index5.html">Contact</a></li>
+        </ul>
+    </nav>
+
+  <!-- nav section end -->
+
+    <!-- contact section start -->
+
+    <section class="contact">
+        <div class="content">
+            <h2>CONTACT ME</h2>
+            <p>Contact me to get your work done</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h3>ADDRESS POINT</h3>
+                    <p>Name : shaheed Lotus <br>
+                        Village: Amodpur <br>
+                        Post office : Muktagacha-2210 <br>
+                        Police Station: Muktagacha <br>
+                        District: Mymensingh</p>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="text">
+                        <h3>CALL ME</h3>
+                    <p> (+88) 01711-952350</p>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>MAIL ME</h3>
+                    <p>shaheedlotus@gmail.com</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>SEND MESSAGE</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>YOUR FULL NAME</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>YOUR EMAIL</span>
+                    </div>
+                    <div class="inputbox">
+                      <textarea required="required"></textarea>
+                        <span>YOUR MESSAGE</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="SEND">
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+ <!-- contact section end -->
+
+
+ 
+
+
+
+<!-- Developed-by Section start-->
+
+<div class="Developed-by">
+    <h6 class="Developed-by-titel">Shaheed Lotus.</h6>
+    <div class="sm">
+        <a href="https://www.facebook.com/home.php" target="blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/Shaheedlotus" target="blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.youtube.com/channel/UCvjq-cnInTBvQ80mwaGxI3g" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/writer.shaheedlotus/" target="blank"><i class="fab fa-instagram-square"></i></a>
+      </div>
+  </div>
+  
+  <!-- Developed-by Section end-->
+
+</body>
+</html>
